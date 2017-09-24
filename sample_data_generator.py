@@ -17,6 +17,9 @@ class SampleDataGenerator:
         self.outputFile = outputFile
         logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 
+    # Generate data base on feature schema file. Currently support columns of
+    #  types string, float, datetime, and generate data randomly or based on statistical distribution.
+    #  Datetime data is generate from a start date and added an interval for subsequent rows.
     def __generateOneColumn(self, colDef):
         if colDef['Type'] == "str":
             strings = colDef["Values"]
