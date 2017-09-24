@@ -54,5 +54,5 @@ class SampleDataGenerator:
             self.outputFile.write(row + '\n')
 
       end = time.time()
-      logging.debug('Took %f seconds to generate %d rows' % ((end - start), numOfRows))  # TODO print time to run
+      logging.debug('Took %f seconds to generate %d rows' % ((end - start), numOfRows))
 
