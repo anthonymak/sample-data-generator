@@ -20,3 +20,5 @@ python GenerateWeather.py
 Output:
 
 Output can be found in the output directory "/output"
+
+**NOTE: label column has been moved to the last column
